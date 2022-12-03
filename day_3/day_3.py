@@ -70,7 +70,7 @@ def part_two(input_str: str) -> int:
     assert len(rucksacks) % 3 == 0
     score = 0
     for i in range(0, len(rucksacks), 3):
-        all_group_items = [x.raw_input for x in rucksacks[i: i + 3]]
+        all_group_items = [x.raw_input for x in rucksacks[i : i + 3]]
         for item in all_group_items[0]:
             if item in all_group_items[1] and item in all_group_items[2]:
                 # there is only one item common to all three
